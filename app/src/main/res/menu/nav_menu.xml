@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/learn"
+        android:title="Studiu"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        
+        />
+
+
+
+
+<item
+    android:id="@+id/quizz"
+    android:title="Antrenament"
+
+    android:icon="@drawable/ic_baseline_check_circle_24"/>
+
+
+
+
+
+<item
+    android:id="@+id/progress"
+    android:title="Progres"
+    android:icon="@drawable/ic_baseline_bar_chart_24"/>
+
+
+</menu>

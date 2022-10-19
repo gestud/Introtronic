@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PPA" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FFC107</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">#FFC107</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.PPA.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+
+
+    <style name="Theme.PPA.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        />
+
+    <style name="Theme.PPA.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

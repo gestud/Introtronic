@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LearnFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null">
+
+        <!--<androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Studiu"
+            android:textColor="@color/grey_better"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Rezistor"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/yellow_new"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+
+
+                    android:src="@drawable/rezistor" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Rezistor"
+                android:textColor="@color/grey_better"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Inductor"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.34">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:cardBackgroundColor="@color/yellow_new"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/Inductor_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/inductor"
+
+                    tools:layout_editor_absoluteX="-16dp"
+                    tools:layout_editor_absoluteY="25dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Inductor"
+                android:textColor="@color/grey_better"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Condesator"
+            android:layout_width="wrap_content"
+            android:layout_height="95dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.34">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                app:cardBackgroundColor="@color/yellow_new"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/Condesator_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/condensator"
+
+                    tools:layout_editor_absoluteX="-16dp"
+                    tools:layout_editor_absoluteY="25dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Condensator"
+                android:textColor="@color/back_grey"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/TNB"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.58">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/yellow_new"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/TNB_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+
+
+                    android:src="@drawable/tnb" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Tranzistor Bipolar"
+                android:textColor="@color/grey_better"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/MOS"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.58">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/yellow_new"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/MOS_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+
+
+                    android:src="@drawable/mos" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Tranzistor MOS"
+                android:textColor="@color/grey_better"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/TEC"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.875"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.58">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card6"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/yellow_new"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/TEC_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+
+
+                    android:src="@drawable/tec" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Tranzistor TEC-J"
+                android:textColor="@color/grey_better"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/AMP1"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card7"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/yellow_new"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/AMP1_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+
+
+                    android:src="@drawable/amp1" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Amplificator"
+                android:textColor="@color/grey_better"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/AMP2"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card8"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/yellow_new"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/AMP2_image"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+
+
+                    android:src="@drawable/amp2" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Amplificator"
+                android:textColor="@color/grey_better"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/AMP3"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card9"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/yellow_new"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/AMP3_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+
+
+                    android:src="@drawable/amp3" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Amplificator"
+                android:textColor="@color/grey_better"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/AMP4"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card10"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/yellow_new"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/AMP4_image"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+
+
+                    android:src="@drawable/amp4" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Amplificator"
+                android:textColor="@color/grey_better"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/AMP5"
+            android:layout_width="wrap_content"
+            android:layout_height="105dp"
+            android:background="?attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card11"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+
+                android:elevation="2dp"
+                app:cardBackgroundColor="@color/yellow_new"
+                app:cardCornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/AMP5_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+
+
+                    android:src="@drawable/amp5" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Amplificator"
+                android:textColor="@color/grey_better"
+                android:textSize="11dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
